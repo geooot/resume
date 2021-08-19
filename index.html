@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        html {
+            background: #f3f3f3;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: white;
+
+            width: 8.5in;
+            height: 11in;
+            margin: 0;
+        }
+        .container {
+            padding: 0.5cm;
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        @media print {
+            .container {
+                border: none;
+            }
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .mt-0 {
+            margin-top: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            margin-block-start: 0.6em;
+            margin-block-end: 0.6em;
+        }
+
+        a {
+            color: black;
+            text-decoration: underline 2px rgb(196, 235, 204);
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        hr {
+            border: 1px dashed #f3f3f3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h2 class="mt-0">George Thayamkery</h2>
+                <p>Software Developer / <a href="mailto:george.thayamkery@gmail.com">george.thayamkery@gmail.com</a> / <a href="tel:9084009042">(908) 400-9042</a>
+            </div>
+            <div style="text-align: right">
+                <p class="mt-0"><a href="https://geooot.com">geooot.com</a></p>
+                <p><a href="https://linkedin.com/in/georgebt">linkedin.com/in/georgebt</a></p>
+                <p><a href="https://github.com/geooot">github.com/geooot</a></p>
+            </div>
+        </div>
+        <h3>Education</h3>
+        <p><b>Texas A&M University</b> / College Station, Texas <span style="float:right">Aug 2018 - May 2022</span></p>
+        <p>B.S. Computer Science, Minor in Business / GPA: 3.60</p>
+        <p>Relevant Coursework: Data Structures and Algorithms, Computer Organization, Linear Algebra, Programming Languages, and Introduction to Computer Systems</p>
+        <hr/>
+        <h3>Languages and Skills</h3>
+        <p>Java, Python 3, C++, .NET 5.0, Azure, AWS, Node JS, React, Typescript, Full Stack Web Development </p>
+        <hr/>
+        <h3>Work Experience</h3>
+        <p><b>Amazon</b> / SDE Intern, Fire OS Multimedia Team / Sunnyvale, California <span style="float:right">June 2021 - Aug 2021</span></p>
+        <ul>
+            <li>Created a camera driver for Fire TV devices that allows customers to use wireless cameras with third party camera/video-conferencing apps.</li>
+            <li>Learned and worked with Android (AOSP) operating system internals, system services, and API frameworks.</li>
+        </ul>
+        <p><b>Audible</b> / SDE Intern, Voice Experience Team / Virtual <span style="float:right">June 2020 - Aug 2020</span></p>
+        <ul>
+            <li>Created an Alexa Skill hosted on AWS Lambda using Node JS and Typescript.</li>
+            <li>Used AWS CDK and CloudFormation to generate infrastructure using code.</li>
+            <li>Managed deployment pipeline to deploy Alexa Skill across various stages.</li>
+        </ul>
+        <p><b>Audible</b> / SDE Intern, Homestead Team / Newark, New Jersey <span style="float:right">June 2019 - Aug 2019</span></p>
+        <ul>
+            <li>Created Java Spring web services to serve audiobook recommendation carousels across many pages on "amazon.com".</li>
+            <li>Managed deployment pipeline to AWS EC2 instances.</li>
+        </ul>
+        <p><b>Nepris</b> / Software Developer Contractor / Frisco, Texas <span style="float:right">June 2019 - May 2021</span></p>
+        <ul>
+            <li>Part time software developer contractor, worked on multiple projects.</li>
+            <li>Product designer and architect of the main application.</li>
+            <li>Established new CI/CD workflows using Azure Pipelines and Github Actions.</li>
+        </ul>
+        <p><b>Purch (now Future PLC)</b> / Software Developer Intern / Plano, Texas <span style="float:right">June 2017 - Aug 2017</span></p>
+        <ul>
+            <li>Swift Developer for Purch’s ShopSavvy iOS app.</li>
+        </ul>
+        <hr/>
+        <h3>Projects<small style="float: right; font-weight: normal; font-style: italic;"><a href="https://github.com/geooot">More projects and information on my Github</a></small></h3>
+        <p><a href="https://geooot.com/helping-eye"><b>Helping Eye</b></a> / Won 1st place for the Microsoft Challenge at TAMUhack 2020 <span style="float:right">Jan 2020</span></p>
+        <p><a href="https://codescrim.com"><b>Codescrim</b></a> / Web app for automated coding competitions. <span style="float:right">2016 - 2018</span></p>
+        <p><a href="https://geooot.com/graded"><b>Graded</b></a> / Mobile app to check grades used by 30,000 users <span style="float:right">2016 - 2018</span></p>
+
+    </div>
+</body>
+</html>
