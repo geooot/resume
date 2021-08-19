@@ -7,7 +7,7 @@
     <title>Resume</title>
     <style>
         html {
-            background: #f3f3f3;
+            background: #333;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -16,10 +16,17 @@
 
             width: 8.5in;
             height: 11in;
-            margin: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
         .container {
             padding: 0.5cm;
+        }
+
+        button {
+            font-size: 2em;
         }
 
         @page {
@@ -30,6 +37,10 @@
         @media print {
             .container {
                 border: none;
+            }
+
+            button {
+                display: none;
             }
         }
 
@@ -135,5 +146,6 @@
             <li>Reached over 35,000 daily active users across many North Texas school districts.</li>
         </ul>
     </div>
+    <button style="position: fixed; bottom: 0; right: 0; margin: 1em;" onclick="print()">Print this out</button>
 </body>
 </html>
