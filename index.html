@@ -22,10 +22,11 @@
             margin-bottom: 0;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.5;
         }
 
         .container {
-            padding: 0.5cm;
+            padding: 1cm;
         }
 
         button {
@@ -63,8 +64,20 @@
         h6,
         p,
         ul {
-            margin-block-start: 0.6em;
-            margin-block-end: 0.6em;
+            margin-block-start: 0.4em;
+            margin-block-end: 0.4em;
+        }
+
+        ul {
+            color: #333;
+        }
+
+        ul a {
+            color: #333;
+        }
+
+        ul a:visited {
+            color: #333;
         }
 
         a {
@@ -78,15 +91,15 @@
 
         hr {
             border: 1px dashed #f3f3f3;
-            margin-left: -0.5cm;
-            margin-right: -0.5cm;
+            margin-left: -1cm;
+            margin-right: -1cm;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: space-between;">
             <div>
                 <h2 class="mt-0">George Thayamkery</h2>
                 <p>Software Developer / <a href="mailto:george.thayamkery@gmail.com">george.thayamkery@gmail.com</a> /
@@ -98,10 +111,6 @@
                 <p><a href="https://github.com/geooot">github.com/geooot</a></p>
             </div>
         </div>
-        <hr />
-        <h3>Programming Languages and Skills</h3>
-        <p>Java, Python 3, Node JS, React, Next JS, Typescript, Full Stack Web Development, Firebase</p>
-        <p>C++, C#, .NET Core 5.0, Go, GraphQL, SQL Server, Django, Azure, AWS</p>
         <hr />
         <h3>Experience</h3>
         <p><a href="https://www.amazon.jobs/en/landing_pages/business-technology-and-solutions"><b>Amazon Web
@@ -165,11 +174,7 @@
             </ul>
         </div>
         <hr />
-        <h3>Education</h3>
-        <p><b>Texas A&M University</b> / College Station, Texas <span style="float:right">Aug 2018 - May 2022</span></p>
-        <p>B.S. Computer Science, Minor in Business</p>
-        <hr />
-        <h3>Personal Projects<small style="float: right; font-weight: normal; font-style: italic;"><a
+        <h3>Personal Projects<small style="float: right; font-weight: normal; font-style: italic; display: none"><a
                     href="https://github.com/geooot">Find more projects and information on my Github page</a></small>
         </h3>
         <p><b>Helping Eye</b> / <a href="https://geooot.com/helping-eye">geooot.com/helping-eye</a> <span
@@ -193,6 +198,13 @@
             <li>Mobile app (iOS and Android) that lets students easily keep track and analyze their grades.</li>
             <li>Reached over 35,000 daily active users across many Texas school districts. Acquired by GradePro in 2018.
             </li>
+        </ul>
+        <hr />
+        <h3>Education</h3>
+        <p><b>Texas A&M University</b> / College Station, Texas <span style="float:right">Aug 2018 - May 2022</span></p>
+        <p></p>
+        <ul>
+            <li>B.S. Computer Science, Minor in Business</li>
         </ul>
     </div>
     <button style="position: fixed; bottom: 0; right: 0; margin: 1em;" onclick="print()">Print this out</button>
