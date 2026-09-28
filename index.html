@@ -26,7 +26,7 @@
         }
 
         .container {
-            padding: 1cm;
+            padding: 0.75cm;
         }
 
         button {
@@ -91,18 +91,18 @@
 
         hr {
             border: 1px dashed #f3f3f3;
-            margin-left: -1cm;
-            margin-right: -1cm;
+            margin-left: -0.75cm;
+            margin-right: -0.75cm;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex; justify-content: space-between; gap: 1rem">
             <div>
                 <h2 class="mt-0">George Thayamkery</h2>
-                <p>Software Developer / <a href="mailto:george.thayamkery@gmail.com">george.thayamkery@gmail.com</a> /
+                <p><a href="mailto:george.thayamkery@gmail.com">george.thayamkery@gmail.com</a> /
                     <a href="tel:9084009042">(908) 400-9042</a></p>
             </div>
             <div style="text-align: right">
@@ -113,68 +113,46 @@
         </div>
         <hr />
         <h3>Experience</h3>
-        <p><a href="https://www.amazon.jobs/en/landing_pages/business-technology-and-solutions"><b>Amazon Web
-                    Services</b></a> / SDE 2, Sales Planning / Seattle, Washington<span style="float:right">Sep 2022 -
-                Present</span></p>
+        <p><b>Amazon Web Services (AWS)</b> / Software Development Engineer II / Seattle, Washington<span style="float:right">Sep 2022 - Present</span></p>
         <ul>
-            <li>Designed and delivered an API using cartesian product algorithms that auto-resolves valid attribute combinations from business classification rules, reducing manual edit interventions by 70%.</li>
-            <li>Led refactoring of a tightly-coupled stateful edits system into a shared library achieving 80% code reuse across multiple interfaces, enabling both frontend and backend automation of transactions.</li>
-            <li>Designed a contested transactions system that allowed users to challenge and revert automated changes.</li>
+            <li>Automated <b>94K+ cross-year transactions</b> previously recreated and submitted manually by designing a fault-tolerant pipeline with independently retryable stages, persistent state, consistency checks, monitoring, and redrive tooling.</li>
+            <li>Scaled bulk transaction processing from ~<b>1K to 100K records</b> by replacing upfront resolution with checkpointed streaming jobs and redesigning DynamoDB partitioning and progress tracking to eliminate hot partitions and write contention.</li>
+            <li>Built a rule-evaluation system that precomputes valid customer-attribute combinations across a hierarchical model, using dependency-ordered parallel processing and OpenSearch indexing to power low-latency suggestions and backend validation.</li>
+            <li>Led development of a shared editing engine used across frontend and backend workflows, extracting validation, recalculation, transaction policy, and submission logic from the browser to eliminate duplicated implementations and enable server-side automation.</li>
+            <li>Co-designed a transaction scheduler that groups overlapping operations using a <b>disjoint-set data structure</b>, serializing dependent transactions while executing independent groups concurrently to prevent ordering-dependent invalid state.</li>
         </ul>
-        <p><a href="https://highlight.run"><b>Highlight</b></a> / Software Developer Contractor / Virtual <span
-                style="float:right">Jan 2022 - May 2022</span></p>
+        <p><b>Highlight</b> / Software Developer Contractor / Remote <span style="float:right">Jan 2022 - May 2022</span></p>
         <ul>
-            <li>Developed and shipped full-stack core features providing clients with insights into user interactions
-                and errors. Worked with Go, GraphQL, and PostgreSQL on the backend. React and Typescript on the
-                frontend.</li>
+            <li>Built product and backend functionality for an open-source observability platform using <b>Go, GraphQL, PostgreSQL, React, and TypeScript</b>.</li>
         </ul>
-        <p><a href="https://nepris.com"><b>Nepris (now Pathful)</b></a> / Software Developer Contractor / Frisco, Texas <span style="float:right">June 2019 - May 2021</span></p>
+        <p><b>Amazon</b> / Software Development Engineer Intern, Fire OS Multimedia / Sunnyvale, California <span style="float:right">Summer 2021</span></p>
         <ul>
-            <li>Led the frontend refactor from the .NET 4 JSP multi page app to a React/Next JS based single page app.</li>
-            <li>Created integration between ServiceStack and Next JS that supported URL rewrites to legacy pages during migration period.</li>
-            <li>Created web based internal tooling that streamlined the transcription of videos and the generation of video clips.</li>
+            <li>Developed a camera driver enabling wireless cameras to work with third-party applications on Fire TV devices.</li>
         </ul>
-        <p><a href="https://amazon.jobs/en/teams/lab126"><b>Amazon</b></a> / SDE Intern, Fire OS Multimedia Team /
-            Sunnyvale, California <span style="float:right">June 2021 - Aug 2021</span></p>
+        <p><b>Nepris (now Pathful)</b> / Software Developer Contractor / Frisco, Texas <span style="float:right">Jun 2019 - May 2021</span></p>
         <ul>
-            <li>Created a camera driver for Fire TV devices that allows customers to use wireless cameras with third
-                party camera/video-conferencing apps.</li>
+            <li>Migrated a legacy .NET/JSP application toward <b>React and Next.js</b>, building routing infrastructure that allowed legacy and modern experiences to coexist during the transition.</li>
         </ul>
-        <p><a href="https://www.audiblecareers.com/technology"><b>Audible</b></a> / SDE Intern / Newark,
-            New Jersey <span style="float:right">Summer 2019 and 2020</span></p>
+        <p><b>Audible</b> / Software Development Engineer Intern / Newark, New Jersey <span style="float:right">Summers 2019 &amp; 2020</span></p>
         <ul>
-            <li>2019: Built Java Spring web services serving audiobook recommendation carousels across product pages on
-                "amazon.com".</li>
-            <li>2020: Created an Alexa Skill hosted on AWS Lambda using Node JS and Typescript.</li>
-        </ul>
-        <p><a href="https://www.futureplc.com/"><b>Purch (now Future PLC)</b></a> / Software Developer Intern / Plano,
-            Texas <span style="float:right">Summer 2016 and 2017</span></p>
-        <ul>
-            <li>2017: Created product pages on the ShopSavvy iOS app using Swift and UIKit.</li>
-            <li>2016: Developed Apache Cordova mobile apps (iOS and Android) for each of Purch’s media brands.</li>
+            <li>Built <b>Java/Spring</b> services for audiobook recommendations on Amazon.com and an Alexa skill using Lambda, Node.js, and TypeScript.</li>
         </ul>
         <hr />
-        <h3>Personal Projects</h3>
-        <p><b>Codescrim</b> / <a href="https://medium.com/codescrim/meet-codescrim-488eeaf5711c">codescrim.com</a><span style="float:right">2016 -
-                2018</span></p>
+        <h3>Projects</h3>
+        <p><b>Graded</b> / <a href="https://geooot.com/graded">geooot.com/graded</a></p>
         <ul>
-            <li>Web app enabling computer science clubs to run automated coding competitions.</li>
-            <!-- <li>Developed solutions to manage problems, securely compile submitted code, and queue judging requests.</li> -->
-            <li>Used in <a href="https://codecember.com">Codecember</a>, a coding competition in 2017 where 40+ teams of
-                4 competed.</li>
-        </ul>
-        <p><b>Graded</b> / <a href="https://geooot.com/graded">geooot.com/graded</a> <span style="float:right">2016 -
-                2018</span></p>
-        <ul>
-            <li>Mobile app (iOS and Android) enabling students to track and analyze their grades.</li>
-            <li>Grew to 35,000+ daily active users across many Texas school districts. Acquired by GradePro in 2018.</li>
+            <li>Built and scaled a mobile grade-tracking application to <b>35K+ daily active users</b> across Texas school districts; acquired by GradePro.</li>
         </ul>
         <hr />
         <h3>Education</h3>
-        <p><b>Texas A&M University</b> / College Station, Texas</p>
+        <p><b>Texas A&amp;M University</b> / College Station, Texas</p>
         <ul>
             <li>B.S. Computer Science, Minor in Business</li>
         </ul>
+        <hr />
+        <h3>Skills</h3>
+        <p><b>Languages:</b> TypeScript, JavaScript, Java, Python, Go, SQL<br />
+           <b>Technologies:</b> AWS, DynamoDB, Lambda, SQS, OpenSearch, PostgreSQL, Node.js, React, GraphQL</p>
     </div>
     <button style="position: fixed; bottom: 0; right: 0; margin: 1em;" onclick="print()">Print this out</button>
 </body>
