@@ -106,8 +106,7 @@
                     <a href="tel:9084009042">(908) 400-9042</a></p>
             </div>
             <div style="text-align: right">
-                <p class="mt-0"><a href="https://geooot.com">geooot.com</a></p>
-                <p><a href="https://linkedin.com/in/georgebt">linkedin.com/in/georgebt</a></p>
+<p><a href="https://linkedin.com/in/georgebt">linkedin.com/in/georgebt</a></p>
                 <p><a href="https://github.com/geooot">github.com/geooot</a></p>
             </div>
         </div>
@@ -115,11 +114,12 @@
         <h3>Experience</h3>
         <p><b>Amazon Web Services (AWS)</b> / Software Development Engineer II / Seattle, Washington<span style="float:right">Sep 2022 - Present</span></p>
         <ul>
-            <li>Automated <b>94K+ cross-year transactions</b> previously recreated and submitted manually by designing a fault-tolerant pipeline with independently retryable stages, persistent state, consistency checks, monitoring, and redrive tooling.</li>
-            <li>Scaled bulk transaction processing from ~<b>1K to 100K records</b> by replacing upfront resolution with checkpointed streaming jobs and redesigning DynamoDB partitioning and progress tracking to eliminate hot partitions and write contention.</li>
-            <li>Built a rule-evaluation system that precomputes valid customer-attribute combinations across a hierarchical model, using dependency-ordered parallel processing and OpenSearch indexing to power low-latency suggestions and backend validation.</li>
+            <li>Build backend systems and developer tooling that support <b>AWS sales allocation and quota planning</b>, including large-scale customer updates, validation, and planning workflows.</li>
+            <li>Automated <b>94K+ customer updates</b> between consecutive sales-planning cycles, replacing a manual recreation and submission process. Built a fault-tolerant pipeline with retryable stages, persistent state, consistency checks, monitoring, and redrive tooling.</li>
+            <li>Scaled bulk customer updates from ~<b>1K to 100K records</b> by replacing upfront resolution with checkpointed streaming jobs and redesigning DynamoDB partitioning and progress tracking to eliminate hot partitions and write contention.</li>
+            <li>Built a rule-evaluation system that precomputes which customer attributes can validly map to each sales territory, using dependency-ordered parallel processing and OpenSearch indexing to power low-latency suggestions and backend validation.</li>
             <li>Led development of a shared editing engine used across frontend and backend workflows, extracting validation, recalculation, transaction policy, and submission logic from the browser to eliminate duplicated implementations and enable server-side automation.</li>
-            <li>Co-designed a transaction scheduler that groups overlapping operations using a <b>disjoint-set data structure</b>, serializing dependent transactions while executing independent groups concurrently to prevent ordering-dependent invalid state.</li>
+            <li>Co-designed a scheduler for concurrent customer-change transactions, using a <b>disjoint-set data structure</b> to group overlapping operations, serialize dependent changes, and execute independent groups concurrently while preserving valid customer state.</li>
         </ul>
         <p><b>Highlight</b> / Software Developer Contractor / Remote <span style="float:right">Jan 2022 - May 2022</span></p>
         <ul>
@@ -138,12 +138,6 @@
             <li>Built <b>Java/Spring</b> services for audiobook recommendations on Amazon.com and an Alexa skill using Lambda, Node.js, and TypeScript.</li>
         </ul>
         <hr />
-        <h3>Projects</h3>
-        <p><b>Graded</b> / <a href="https://geooot.com/graded">geooot.com/graded</a></p>
-        <ul>
-            <li>Built and scaled a mobile grade-tracking application to <b>35K+ daily active users</b> across Texas school districts; acquired by GradePro.</li>
-        </ul>
-        <hr />
         <h3>Education</h3>
         <p><b>Texas A&amp;M University</b> / College Station, Texas</p>
         <ul>
@@ -152,7 +146,7 @@
         <hr />
         <h3>Skills</h3>
         <p><b>Languages:</b> TypeScript, JavaScript, Java, Python, Go, SQL<br />
-           <b>Technologies:</b> AWS, DynamoDB, Lambda, SQS, OpenSearch, PostgreSQL, Node.js, React, GraphQL</p>
+           <b>Technologies:</b> AWS, DynamoDB, Lambda, SQS, OpenSearch, API Gateway, MCP, AgentCore, PostgreSQL, Node.js, React, GraphQL</p>
     </div>
     <button style="position: fixed; bottom: 0; right: 0; margin: 1em;" onclick="print()">Print this out</button>
 </body>
