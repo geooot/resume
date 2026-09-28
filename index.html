@@ -17,7 +17,7 @@
             font-size: 10pt;
 
             width: 8.5in;
-            height: 11in;
+            min-height: 11in;
             margin-top: 0;
             margin-bottom: 0;
             margin-left: auto;
@@ -45,6 +45,10 @@
 
             button {
                 display: none;
+            }
+
+            hr.page-break {
+                border: none;
             }
         }
 
@@ -94,6 +98,12 @@
             margin-left: -0.75cm;
             margin-right: -0.75cm;
         }
+
+        hr.page-break {
+            break-before: page;
+            page-break-before: always;
+            margin-top: 0.75cm;
+        }
     </style>
 </head>
 
@@ -110,6 +120,13 @@
                 <p><a href="https://github.com/geooot">github.com/geooot</a></p>
             </div>
         </div>
+        <hr />
+        <h3>Summary</h3>
+        <p>Software engineer with 4 years at AWS building backend systems for large-scale sales planning workflows. Experienced in distributed processing, data-intensive services, system design, and developer tooling, with a focus on scalable and reliable production systems.</p>
+        <hr />
+        <h3>Skills</h3>
+        <p><b>Languages:</b> TypeScript, JavaScript, Java, Python, Go, SQL<br />
+           <b>Technologies:</b> AWS, DynamoDB, Lambda, SQS, OpenSearch, API Gateway, MCP, AgentCore, PostgreSQL, Node.js, React, GraphQL</p>
         <hr />
         <h3>Experience</h3>
         <p><b>Amazon Web Services (AWS)</b> / Software Development Engineer II / Seattle, Washington<span style="float:right">Sep 2022 - Present</span></p>
@@ -137,16 +154,30 @@
         <ul>
             <li>Built <b>Java/Spring</b> services for audiobook recommendations on Amazon.com and an Alexa skill using Lambda, Node.js, and TypeScript.</li>
         </ul>
+        <hr class="page-break" />
+        <h3>Projects</h3>
+        <p><b><a href="https://geooot.com/graded">Graded</a></b></p>
+        <ul>
+            <li>Created and scaled an iOS/Android grade-tracking application to <b>35K+ daily active users</b> across Texas school districts, helping students track and analyze their grades; acquired by GradePro in 2018.</li>
+        </ul>
+        <p><b><a href="https://github.com/geooot/zig-sokol-crossplatform-starter">zig-sokol-crossplatform-starter</a></b></p>
+        <ul>
+            <li>Built a cross-platform <b>Zig/Sokol</b> application template targeting iOS, Android, Windows, and macOS from one build system, including Android App Bundle generation, Xcode project generation, and GitHub Actions CI/CD.</li>
+        </ul>
+        <p><b><a href="https://github.com/tamu-datathon-org/koth">KOTH</a></b></p>
+        <ul>
+            <li>Built an automated code-judging platform used for the TAMU Datathon 2020 Stock Challenge, with queued workers executing submissions in isolated Docker challenge containers, customizable evaluators, and a web submission/leaderboard experience.</li>
+        </ul>
+        <p><b><a href="https://codescrim.com">Codescrim</a></b></p>
+        <ul>
+            <li>Created an online platform for computer science clubs and classrooms to run automated coding competitions, manage problem sets, and track group leaderboards; used it to host <a href="https://codecember.com">Codecember</a>, a coding competition I organized.</li>
+        </ul>
         <hr />
         <h3>Education</h3>
         <p><b>Texas A&amp;M University</b> / College Station, Texas</p>
         <ul>
             <li>B.S. Computer Science, Minor in Business</li>
         </ul>
-        <hr />
-        <h3>Skills</h3>
-        <p><b>Languages:</b> TypeScript, JavaScript, Java, Python, Go, SQL<br />
-           <b>Technologies:</b> AWS, DynamoDB, Lambda, SQS, OpenSearch, API Gateway, MCP, AgentCore, PostgreSQL, Node.js, React, GraphQL</p>
     </div>
     <button style="position: fixed; bottom: 0; right: 0; margin: 1em;" onclick="print()">Print this out</button>
 </body>
