@@ -131,12 +131,12 @@
         <h3>Experience</h3>
         <p><b>Amazon Web Services (AWS)</b> / Software Development Engineer II / Seattle, Washington<span style="float:right">Sep 2022 - Present</span></p>
         <ul>
-            <li>Build backend systems and developer tooling that support <b>AWS sales allocation and quota planning</b>, including large-scale customer updates, validation, and planning workflows.</li>
+            <li>Built backend systems and developer tooling that support <b>AWS sales allocation and quota planning</b>, including large-scale customer updates, validation, and planning workflows.</li>
             <li>Automated <b>94K+ customer updates</b> between consecutive sales-planning cycles, replacing a manual recreation and submission process. Built a fault-tolerant pipeline with retryable stages, persistent state, consistency checks, monitoring, and redrive tooling.</li>
-            <li>Scaled bulk customer updates from ~<b>1K to 100K records</b> by replacing upfront resolution with checkpointed streaming jobs and redesigning DynamoDB partitioning and progress tracking to eliminate hot partitions and write contention.</li>
-            <li>Built a rule-evaluation system that precomputes which customer attributes can validly map to each sales territory, using dependency-ordered parallel processing and OpenSearch indexing to power low-latency suggestions and backend validation.</li>
-            <li>Led development of a shared editing engine used across frontend and backend workflows, extracting validation, recalculation, transaction policy, and submission logic from the browser to eliminate duplicated implementations and enable server-side automation.</li>
-            <li>Co-designed a scheduler for concurrent customer-change transactions, using a <b>disjoint-set data structure</b> to group overlapping operations, serialize dependent changes, and execute independent groups concurrently while preserving valid customer state.</li>
+            <li>Scaled bulk customer updates from ~<b>1K to 100K records</b>. Replaced upfront resolution with checkpointed streaming jobs and redesigned DynamoDB partitioning and progress tracking to eliminate hot partitions and write contention.</li>
+            <li>Built a rule-evaluation system that precomputes valid customer attributes for each sales territory. Used dependency-ordered parallel processing and OpenSearch indexing to power low-latency suggestions and backend validation.</li>
+            <li>Designed authentication and API integration for an MCP gateway supporting IAM/SigV4 system agents and JWT-authenticated end users. Routed AgentCore through API Gateway to reuse existing Smithy-generated contracts and Lambda infrastructure.</li>
+            <li>Co-designed a scheduler for concurrent customer-change transactions using a <b>disjoint-set data structure</b> to group overlapping operations. Dependent changes run serially while independent groups execute concurrently, preserving valid customer state.</li>
         </ul>
         <p><b>Highlight</b> / Software Developer Contractor / Remote <span style="float:right">Jan 2022 - May 2022</span></p>
         <ul>
@@ -158,19 +158,19 @@
         <h3>Projects</h3>
         <p><b><a href="https://geooot.com/graded">Graded</a></b></p>
         <ul>
-            <li>Created and scaled an iOS/Android grade-tracking application to <b>35K+ daily active users</b> across Texas school districts, helping students track and analyze their grades; acquired by GradePro in 2018.</li>
+            <li>Created and scaled an iOS/Android grade-tracking application to <b>35K+ daily active users</b> across Texas school districts, helping students track and analyze their grades. <b>Acquired by GradePro in 2018.</b></li>
         </ul>
         <p><b><a href="https://github.com/geooot/zig-sokol-crossplatform-starter">zig-sokol-crossplatform-starter</a></b></p>
         <ul>
-            <li>Built a cross-platform <b>Zig/Sokol</b> application template targeting iOS, Android, Windows, and macOS from one build system, including Android App Bundle generation, Xcode project generation, and GitHub Actions CI/CD.</li>
+            <li>Built a cross-platform <b>Zig/Sokol</b> application template targeting iOS, Android, Windows, and macOS from one build system. Added Android App Bundle generation, Xcode project generation, and GitHub Actions CI/CD.</li>
         </ul>
         <p><b><a href="https://github.com/tamu-datathon-org/koth">KOTH</a></b></p>
         <ul>
-            <li>Built an automated code-judging platform used for the TAMU Datathon 2020 Stock Challenge, with queued workers executing submissions in isolated Docker challenge containers, customizable evaluators, and a web submission/leaderboard experience.</li>
+            <li>Built an automated code-judging platform used for the TAMU Datathon 2020 Stock Challenge. Queued workers executed submissions in isolated Docker containers with customizable evaluators, backed by a web submission and leaderboard experience.</li>
         </ul>
-        <p><b><a href="https://codescrim.com">Codescrim</a></b></p>
+        <p><b><a href="https://codescrim.com/">Codescrim</a></b></p>
         <ul>
-            <li>Created an online platform for computer science clubs and classrooms to run automated coding competitions, manage problem sets, and track group leaderboards; used it to host <a href="https://codecember.com">Codecember</a>, a coding competition I organized.</li>
+            <li>Created an online platform for computer science clubs and classrooms to run automated coding competitions, manage problem sets, and track group leaderboards; used it to host <a href="https://codecember.com/">Codecember</a>, a coding competition I organized.</li>
         </ul>
         <hr />
         <h3>Education</h3>
